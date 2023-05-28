@@ -1,0 +1,161 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{
+	scroll-behavior: smooth;
+	background-color: #483D8B;
+}
+
+.navbar{
+	display:flex;
+	justify-content:center;
+	align-items: center;
+	background-color: #2F4F4F;
+	top: 0;
+}
+
+.navbar ul{
+	display: flex;
+	list-style: none;
+	margin: 20px 0px;
+}
+
+.navbar ul li{
+	font-family: sans-serif;
+	font-size: 1.1rem;
+	font-weight: bold;
+}
+
+.navbar ul li a{
+	text-decoration: none;
+	color: #FFFAF0;
+	padding: 8px 25px;
+	transition: all .5s ease;
+}
+
+.navbar ul li a:hover{
+	background-color: #FFFAF0;
+	color: #000000;
+	box-shadow: 00 10px #FFFAF0;
+}
+
+#home{
+	display: flex;
+	flex-direction: column;
+	background-color: #483D8B;
+	height: 840px;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+
+.main{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: absolute;
+	top:20%;
+}
+
+.main span{
+	text-transform: uppercase;
+	font-family: century;
+	text-align: center;
+	display: block;
+}
+
+.txt1 {
+	letter-spacing: 4px;
+	font-size: 55px;
+	color: #F8D9C6;
+	margin-bottom: 10px;
+	animation: text 3s 1;
+	background: DarkSlateBlue;
+	position: relative;
+}
+
+.txt2 {
+	font-size: 30px;
+	color: #F8D9C6;
+}
+@keyframes text {
+	0%{
+		color: indigo;
+		margin-bottom: -40px;
+	}
+	30%{
+	letter-spacing: 20px;
+	margin-bottom: -40px;
+	}
+	85%{
+	letter-spacing: 4px;
+	margin-bottom: -40px;
+	}
+}
+#maincontent{
+	display: flex;
+	flex-direction: column;
+	font-size: 20px;
+	background-color: #483D8B;
+	color: #F8D9C6;
+	padding: 80px;
+}
+
+.pic{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	box-sizing: border-box;
+}
+
+.pic img{
+	width: 360px;
+	height: 240px;
+	margin: 10px;
+}
+
+.sidenav {
+	width: 80px;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 30px 15px;
+	background: rgba(70, 71, 74, 0.6);
+	transition: width 0.5s;
+}
+
+.sidenav ul {
+	list-style: none;
+	padding: 0 15px;
+}
+
+.sidenav ul li {
+	margin: 50px 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+.sidenav:hover{
+	width: 150px;
+}
+
+#moreinfo{
+	display: flex;
+	flex-direction: column;
+	font-size: 20px;
+	background-color: #F8D9C6;
+	color: #483D8B;
+	padding: 80px;
+}
+
+#footer{
+	background-color: #3333;
+	padding: 10px;
+	color: #F8D9C6;
+	text-align: center;
+}
